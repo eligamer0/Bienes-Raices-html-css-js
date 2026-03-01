@@ -80,3 +80,6 @@ export function dev() {
 }
 
 export default series( js, css, imagenes, dev )
+
+import { series } from 'gulp';
+export const build = series(css, js, imagenes);
